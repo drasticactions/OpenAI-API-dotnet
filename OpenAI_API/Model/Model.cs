@@ -141,14 +141,19 @@ namespace OpenAI_API.Models
 		public static Model GPT4_32k_Context => new Model("gpt-4-32k") { OwnedBy = "openai" };
 
 		/// <summary>
-		/// Ability to understand images, in addition to all other GPT-4 Turbo capabilities. Returns a maximum of 4,096 output tokens. This is a preview model version and not suited yet for production traffic.
+		/// Ability to understand images, in addition to all other GPT-4 Turbo capabilities. Returns a maximum of 4,096 output tokens.
 		/// </summary>
-		public static Model GPT4_Vision => new Model("gpt-4-vision-preview") { OwnedBy = "openai" };
+		public static Model GPT4_Vision => new Model("gpt-4-vision") { OwnedBy = "openai" };
 
 		/// <summary>
-		///	The latest GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Returns a maximum of 4,096 output tokens. This preview model is not yet suited for production traffic. 
+		///	The latest GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Returns a maximum of 4,096 output tokens.
 		/// </summary>
-		public static Model GPT4_Turbo => new Model("gpt-4-turbo-preview") { OwnedBy = "openai" };
+		public static Model GPT4_Turbo => new Model("gpt-4-turbo") { OwnedBy = "openai" };
+		
+		/// <summary>
+		///	Our most advanced, multimodal flagship model that’s cheaper and faster than GPT-4 Turbo.
+		/// </summary>
+		public static Model GPT4_Omni => new Model("gpt-4o") { OwnedBy = "openai" };
 		#endregion
 
 		#region GPT-3.5
